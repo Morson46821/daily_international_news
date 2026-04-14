@@ -1,22 +1,20 @@
-# 忽略特定的網頁檔案與備份資料夾
-/index.html
-/Backup/
-
-# 忽略日誌與工作檔案
-/cron_log.log
-/final_news_report.json
-/raw_news_full.json
-
-# 處理帶有空格的檔名，建議加上引號或用反斜線
-Rss*list.xlsx
-com.tony.autonews.plist*alias
-
-# 系統檔案
+# 忽略 Mac 系統自動產生的縮圖檔（非常建議加入）
 .DS_Store
 
-# 忽略 Scrapper 資料夾內的所有 XML 檔案
-/Step1_Scrapper/*.xml
-
-# 額外建議：忽略 Python 的快取，避免污染倉庫
+# 忽略 Python 執行時產生的快取資料夾
 __pycache__/
 *.pyc
+
+# 忽略環境變數或秘密金鑰檔案（如果你有把 API Key 存在獨立檔案的話）
+.env
+config_secret.json
+
+# 忽略虛擬環境資料夾
+venv/
+.venv/
+
+# 忽略日誌檔
+*.log
+
+# 忽略.gitignore
+.gitignore
