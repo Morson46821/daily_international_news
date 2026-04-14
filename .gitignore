@@ -1,0 +1,22 @@
+# 忽略特定的網頁檔案與備份資料夾
+/index.html
+/Backup/
+
+# 忽略日誌與工作檔案
+/cron_log.log
+/final_news_report.json
+/raw_news_full.json
+
+# 處理帶有空格的檔名，建議加上引號或用反斜線
+Rss*list.xlsx
+com.tony.autonews.plist*alias
+
+# 系統檔案
+.DS_Store
+
+# 忽略 Scrapper 資料夾內的所有 XML 檔案
+/Step1_Scrapper/*.xml
+
+# 額外建議：忽略 Python 的快取，避免污染倉庫
+__pycache__/
+*.pyc
